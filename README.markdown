@@ -10,7 +10,7 @@ Written and tested using Puppet version 2.6.2
 
 ## Define custom queues ##
 
-To define a custom queues, add rabbit::queue resources like these:
+To define custom queues, add rabbit::queue resources like these:
 
-rabbitmq::queue { 'myqueue': }
-rabbitmq::queue { 'anotherqueue': }
+    rabbitmq::queue { 'myqueue': }
+    rabbitmq::queue { 'anotherqueue': }
