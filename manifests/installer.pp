@@ -37,9 +37,11 @@ class rabbitmq::installer (
     rabbitmq::user { 'guest':
         action  => 'delete',
     }
+    # Administrator user
     rabbitmq::user { $user:
-        action  => 'create',
-        pass    => $pass,
+        action        => 'create',
+        pass          => $pass,
+        administrator => true,
     }
 
     exec { 'enable-rabbit-plugins':

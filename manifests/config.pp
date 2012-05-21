@@ -26,6 +26,7 @@ class rabbitmq::config {
         'erlang-tools',
         'erlang-webtool',
         'erlang-xmerl',
+        'python',
     ]
 
     package { $dependencies: ensure => installed, }
